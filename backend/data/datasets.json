@@ -1,0 +1,34 @@
+{
+    "Weather-OPEN_WEATHER": {
+      "inputs": {
+        "API key": ["string", true],
+        "City": ["whisper", true, "", "./static/Open_weather/cities.txt"],
+        "Country": ["string", false, "CZ"]
+      }
+    },
+    "DPMB-departures from stop for Brno": {
+      "inputs": {
+        "Stop name": ["whisper", true, "", "./static/DPMB/stops.txt"],
+        "Maximum departures shown (default 5)": ["int", false, 5],
+        "Direction": ["switch", false, true, { "from": "Inbound", "to": "Outbound" }],
+        "Line number": ["int", false]
+      }
+    },
+    "Date and time": {
+      "inputs": {
+        "Date format": ["picker", true, "DD/MM/YYYY",{ "options":["DD/MM/YYYY", "MM/DD/YYYY", "YYYY/MM/DD"]}],
+        "NTP server (if not defined using server time)": ["string", false, "pool.ntp.org"],
+        "Time zone in utc format (Continent/City)": ["whisper", true, "",  "./static/TimeZones/utc_timezones.txt"],
+        "Update interval (s)": ["int", true, 60]
+      }
+    },
+    "MQTT-protocol": {
+      "inputs": {
+        "Broker URL": ["string", true],
+        "Broker Port": ["int", true, 1883],
+        "Topics": ["list-string", true, [""]]
+      }
+    }
+  }
+
+  

@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "name": "LaskaKit_ESPink-Shelf-2.13",
+        "type": "1bpp",
+        "chip": "esp32",
+        "resolutionX": 122,
+        "resolutionY": 250,
+        "fqbn": "esp32:esp32:esp32",
+        "esp32-lib-version": "3.2.0"
+    },
+    {
+        "id": 2,
+        "name": "LilyGO_TTGO_T5-4.7",
+        "type": "4bpp",
+        "chip": "esp32",
+        "resolutionX": 960,
+        "resolutionY": 540,
+        "fqbn": "esp32:esp32:esp32s3",
+        "esp32-lib-version": "2.0.15",
+        "compilation_flags": {
+            "CDCOnBoot":      "cdc",
+            "USBMode":      "hwcdc",
+            "FlashSize":         "16M",
+            "PartitionScheme":   "app3M_fat9M_16MB",
+            "PSRAM":             "opi"
+          }
+    }
+]

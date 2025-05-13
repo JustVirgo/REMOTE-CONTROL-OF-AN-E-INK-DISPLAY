@@ -1,0 +1,3 @@
+Here weill be saved the pictures that are rendered depending on the info provided.
+They won't be deleted after sending for debug, but displays with the same id will overwrite the old ones.
+Also every new request for the picture will overwrite the old one

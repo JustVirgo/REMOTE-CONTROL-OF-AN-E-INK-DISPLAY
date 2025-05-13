@@ -1,0 +1,2 @@
+Here will be your uploaded pictures, which can be displayed on the displays.
+Only .jpg and .png files were tested.
